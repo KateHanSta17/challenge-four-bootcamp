@@ -20,7 +20,7 @@ section {
 
 aside > h2 {
   font-size: 4rem;
-  color: white;
+  color: var(--light-text);
   text-shadow: 1px 1px 1px var(--dark-accent);
 }
 
@@ -46,6 +46,7 @@ form h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
+  color: var(--light-text);
 }
 
 input[type=submit] {
@@ -53,29 +54,28 @@ input[type=submit] {
   cursor: pointer;
   font-weight: bold;
   font-size: 1rem;
-  background-color: var(--dark);
-  color: var(--light);
+  background-color: var(--button-bg);
+  color: var(--button-text);
   border: none;
   border-radius: 4px;
 }
 
 input[type=submit]:active {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .5);
-  background-color: var(--dark-accent);
 }
 
 input[type=submit]:hover {
-  border-style: inset;
-  background-color: var(--dark-accent-action);
+  background-color: lighten(var(--button-bg), 10%);
 }
 
 input,
 textarea {
   border-radius: 4px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--light-text);
   font-size: 1rem;
   padding: 0.5rem;
-  background-color: var(--light);
+  background-color: var(--light-bg);
+  color: var(--light-text);
 }
 
 section {
@@ -95,6 +95,7 @@ h1 {
 label {
   margin-bottom: 0.5rem;
   font-weight: bold;
+  color: var(--light-text);
 }
 
 input,
@@ -108,7 +109,25 @@ textarea {
 
 /* Classes */
 .dark section {
-  border-left: solid .5rem var(--disabled);
+  border-left: solid .5rem var(--dark-highlight);
+}
+
+.dark form {
+  background-color: var(--dark-accent);
+}
+
+.dark form h2 {
+  color: var(--dark-text);
+}
+
+.dark label {
+  color: var(--dark-highlight);
+}
+
+.dark input,
+.dark textarea {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
 }
 
 /* IDs */
@@ -129,15 +148,15 @@ header {
 header a {
   text-decoration: none;
   font-size: 1rem;
-  color: var(--dark);
-  background-color: var(--light-accent);
+  color: var(--button-text);
+  background-color: var(--button-bg);
   padding: 0.5rem 1rem;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header a:hover {
-  background-color: var(--light);
+  background-color: lighten(var(--button-bg), 10%);
 }
 
 /* Footer Styles */

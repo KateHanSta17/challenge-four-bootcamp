@@ -2,9 +2,9 @@
 function updateCircleColor(mode) {
     const root = document.documentElement;
     if (mode === 'dark') {
-      root.style.setProperty('--circle-color', '#784D92');
+      root.style.setProperty('--circle-color', '#697184');
     } else {
-      root.style.setProperty('--circle-color', '#784D92');
+      root.style.setProperty('--circle-color', '#D8CFDO');
     }
   }
   
