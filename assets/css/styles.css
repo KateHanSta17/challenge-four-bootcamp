@@ -47,18 +47,23 @@ ul {
 /* Universal */
 :root {
   /* Light Mode Colors */
-  --light-bg: #D3D9D4;
-  --light-accent: #124E66;
-  --light-text: #212A31;
-  --light-secondary: #2E3944;
-  --light-highlight: #784D92;
+  --light-bg: #F2F1EF;
+  --light-accent: #D8CFDO;
+  --light-text: #413F3D;
+  --light-secondary: #697184;
+  --light-highlight: #B1A6A4;
   
   /* Dark Mode Colors */
-  --dark-bg: #212A31;
-  --dark-accent: #784D92;
-  --dark-text: #124E66;
-  --dark-secondary: #2E3944;
-  --dark-highlight: #D3D9D4;
+  --dark-bg: #413F3D;
+  --dark-accent: #697184;
+  --dark-text: #F2F1EF;
+  --dark-secondary: #D8CFDO;
+  --dark-highlight: #B1A6A4;
+
+  /* Common Colors */
+  --error: #FF0000;
+  --button-bg: #BADFE7;
+  --button-text: #413F3D;
 }
 
 * {
@@ -114,7 +119,7 @@ body.light {
 }
 
 body.light h2 {
-  color: var(--light-highlight);
+  color: var(--light-secondary);
 }
 
 body.light header,
@@ -134,12 +139,12 @@ body.dark {
 }
 
 body.dark h2 {
-  color: var(--dark-highlight);
+  color: var(--dark-secondary);
 }
 
 body.dark header,
 body.dark footer {
-  background-color: var(--dark-secondary);
+  background-color: var(--dark-accent);
   color: var(--dark-text);
 }
 
@@ -148,19 +153,29 @@ body.dark footer a {
 }
 
 .dark aside {
-  background: linear-gradient(to top, #124E66, #D3D9D4);
+  background: linear-gradient(to top, var(--dark-secondary), var(--dark-text));
 }
 
 .dark aside h2 {
-  color: #2E3944;
+  color: var(--dark-highlight);
 }
 
 .dark form {
-  background-color: #D3D9D4;
+  background-color: var(--dark-accent);
+}
+
+.dark form h2 {
+  color: var(--dark-text);
 }
 
 .dark label {
-  color: #2E3944;
+  color: var(--dark-highlight);
+}
+
+.dark input,
+.dark textarea {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
 }
 
 /* IDs */
@@ -228,4 +243,26 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Button Styles */
+button,
+a {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+}
+
+button:hover,
+a:hover {
+  background-color: lighten(var(--button-bg), 10%);
+}
+
+button:active,
+a:active {
+  background-color: darken(var(--button-bg), 10%);
+}
+
+/* Error Messages */
+#error {
+  color: var(--error);
 }
