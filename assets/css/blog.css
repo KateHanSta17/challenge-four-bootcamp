@@ -1,10 +1,6 @@
-/*
-  Blog Styles
-*/
+/* Blog Styles */
 
-/*
-  Tags
-*/
+/* Tags */
 a {
   text-decoration: none;
 }
@@ -36,9 +32,42 @@ article p {
 }
 
 footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 2rem;
   position: fixed;
-  inset: 0;
-  top: calc(100% - 5rem);
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.dark footer {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.dark footer a {
+  color: var(--light);
+}
+
+.light footer {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.light footer a {
+  color: var(--dark);
 }
 
 li {
@@ -58,9 +87,7 @@ ul {
   list-style: none;
 }
 
-/*
-  Classes
-*/
+/* Classes */
 .card {
   flex: 1 1 50%;
   border: 2px solid;
@@ -79,9 +106,7 @@ ul {
   color: var(--dark);
 }
 
-/*
-  IDs
-*/
+/* IDs */
 #back {
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -90,7 +115,6 @@ ul {
   background-color: var(--dark-accent);
   color: var(--light);
 }
-
 
 #back:active {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .5);

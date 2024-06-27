@@ -1,10 +1,6 @@
-/*
-  Form Styles
-*/
+/* Form Styles */
 
-/*
-  Tags
-*/
+/* Tags */
 aside {
   background: linear-gradient(
     var(--light-accent), 
@@ -32,6 +28,13 @@ form {
   display: flex;
   flex-flow: column wrap;
   position: relative;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--light-accent);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form > *:not(label) {
@@ -39,7 +42,7 @@ form > *:not(label) {
   padding: 0.5rem;
 }
 
-h2 {
+form h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -52,6 +55,8 @@ input[type=submit] {
   font-size: 1rem;
   background-color: var(--dark);
   color: var(--light);
+  border: none;
+  border-radius: 4px;
 }
 
 input[type=submit]:active {
@@ -67,9 +72,10 @@ input[type=submit]:hover {
 input,
 textarea {
   border-radius: 4px;
-  border-width: 1px;
+  border: 1px solid #ccc;
   font-size: 1rem;
-  background-color: var(--light-accent);
+  padding: 0.5rem;
+  background-color: var(--light);
 }
 
 section {
@@ -81,19 +87,95 @@ section {
   border-left: double 1rem;
 }
 
-/*
-  Classes
-*/
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Classes */
 .dark section {
   border-left: solid .5rem var(--disabled);
 }
 
-/*
-  IDs
-*/
+/* IDs */
 #error {
   color: var(--error);
   opacity: .75;
   position: absolute;
   bottom: -2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--dark);
+  background-color: var(--light-accent);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header a:hover {
+  background-color: var(--light);
+}
+
+/* Footer Styles */
+footer {
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center;
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.dark footer {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.dark footer a {
+  color: var(--light);
+}
+
+.light footer {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.light footer a {
+  color: var(--dark);
 }
