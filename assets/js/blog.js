@@ -17,7 +17,7 @@ function createBlogPostElement(post) {
 
 // TO DO: Create a function that handles the case where there are no blog posts to display
 function displayNoPostsMessage() {
-  blogPostsContainer.innerHTML = '<p>No Blog posts yet...</p>';
+  blogPostsContainer.innerHTML = '<p>No posts yet... go back and share!</p>';
 }
 
 // TO DO: Create a function that reads from local storage and returns the data

@@ -1,5 +1,11 @@
 # 04 Web APIs: Personal Blog
 
+### GitHub URL
+https://github.com/KateHanSta17/challenge-four-bootcamp
+
+### GitPages URL
+
+
 ## Your Task
 
 In this challenge, you'll create a two-page website where users will input and view blog posts. It includes building a content form, dynamically rendering blog posts, and implementing a light/dark mode toggle. As you code, you'll gain practical JavaScript experience, explore the Document Object Model's power, and set the stage for more advanced tasks.
@@ -37,6 +43,19 @@ THEN I am presented with a JSON array of blog post objects, each including the p
 WHEN I take a closer look at a single blog entry in the list,
 THEN I can see the title, the content, and the author of the post.
 ```
+
+## How it works
+Start your blog on this page. Be sure to fill in every field.
+![Start your blog on this page](./assets/css/Images/light%20mode.jpg)
+
+Review your post on the following page after submission. Navigate back to the submission page using the button in the top right corner.
+![See your post on the following page](./assets/css/Images/light%20mode%20blog%20screen.jpg)
+
+An error message should appear if you skip a field.
+![Fill in every field to avoid errors](./assets/css/Images/Dark%20mode%20error%20message.jpg)
+
+Use the toggle in the top left to switch between dark and light mode.
+![Use the toggle in the top left to switch between dark and light mode. Use the button in the top right to switch between the submission page and blog history page.](./assets/css/Images/light%20mode%20blog%20screen.jpg)
 
 ## Mock-Up
 
