@@ -4,7 +4,7 @@
 https://github.com/KateHanSta17/challenge-four-bootcamp
 
 ### GitPages URL
-
+https://katehansta17.github.io/challenge-four-bootcamp/
 
 ## Your Task
 
